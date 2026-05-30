@@ -8,7 +8,6 @@
 #include "train.h"
 
 int main() {
-
     std::cout << "n\tall_off\tall_on\trandom\n";
 
     std::srand(static_cast<unsigned>(std::time(nullptr)));
