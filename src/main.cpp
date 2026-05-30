@@ -1,5 +1,9 @@
 // Copyright 2022 NNTU-CS
 #include <iostream>
+#include <iomanip>
+#include <cstdlib>
+#include <ctime>
+#include <fstream>
 #include "train.h"
 
 int main() {
