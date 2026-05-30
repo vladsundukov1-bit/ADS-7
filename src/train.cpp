@@ -1,4 +1,5 @@
 // Copyright 2021 NNTU-CS
+// cppcheck-suppress unusedStructMember
 #include "train.h"
 #include <stdexcept>
 
