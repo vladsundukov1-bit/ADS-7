@@ -3,13 +3,23 @@
 #include "train.h"
 
 int main() {
-  Train train;
-  int count = 60; // кол-во вагонов
+  #ifndef INCLUDE_TRAIN_H_
+#define INCLUDE_TRAIN_H_
 
-  while (count--)
-    train.addCar(false);
-
-  std::cout << train.getLength() << std::endl;
-  std::cout << train.getOpCount() << std::endl;
-  return 0;
+class Train {
+ private:
+  struct Car {
+    bool light;
+    Car *next;
+    Car *prev;
+  };
+  int countOp;
+  Car *first;
+ public:
+  Train();
+  void addCar(bool light);
+  int getLength();
+  int getOpCount();        
+};
+#endif
 }
