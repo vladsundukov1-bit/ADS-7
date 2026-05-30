@@ -1,4 +1,5 @@
 // Copyright 2022 NNTU-CS
+// cppcheck-suppress unusedStructMember
 #include <iostream>
 #include <iomanip>
 #include <cstdlib>
